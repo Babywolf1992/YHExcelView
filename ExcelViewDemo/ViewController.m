@@ -27,6 +27,8 @@
 //    self.excelView.borderColor = [UIColor blueColor];
     self.titleArray = @[@"一",@"二",@"三",@"四",@"五",@"六",@"七",@"八",@"九"];
     self.colWidthArray = @[@(35.0),@(35.0),@(35.0),@(35.0),@(35.0),@(35.0),@(35.0),@(35.0),@(40.0)];
+//    self.titleArray = @[@"一",@"二",@"三",@"四",@"五",@"六",@"七",@"八",@"九"];
+//    self.colWidthArray = @[@(35.0),@(35.0),@(35.0),@(35.0),@(35.0),@(35.0),@(35.0),@(35.0),@(40.0)];
     self.titleView.dataSource = self;
     self.excelView.dataSource = self;
 }
@@ -46,8 +48,8 @@
 
 #pragma mark - YHExcelViewDataSource
 - (NSInteger)excelView:(YHExcelView *)excelView columnCountAtIndexPath:(NSIndexPath *)indexPath {
-//    return self.titleArray.count;
-    return ((indexPath.row) % 9 ) + 1;
+    return self.titleArray.count;
+//    return ((indexPath.row) % 9 ) + 1;
 }
 
 - (CGFloat)excelView:(YHExcelView *)excelView widthForColumnAtIndex:(YHExcelViewIndexPath *)indexPath {
@@ -60,7 +62,7 @@
         col = [[YHExcelViewColumn alloc] initWithReuseIdentifier:@"col"];
         col.textLabel.font = [UIFont systemFontOfSize:10];
     }
-    NSString *text = [NSString stringWithFormat:@"%@x%@=%@",@(indexPath.col + 1),@(indexPath.row + 1) ,@((indexPath.row + 1) * (indexPath.col + 1))];
+    NSString *text = [NSString stringWithFormat:@"%@行%@列",@(indexPath.row),@(indexPath.col)];
     col.textLabel.text = text;
     return col;
 }
@@ -70,7 +72,7 @@
 }
 
 - (NSInteger)excelView:(YHExcelView *)excelView numberOfRowsInSection:(NSInteger)section {
-    return 9;
+    return 20;
 }
 
 @end
