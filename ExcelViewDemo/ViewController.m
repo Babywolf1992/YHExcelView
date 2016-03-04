@@ -12,8 +12,8 @@
 
 @interface ViewController ()<YHExcelTitleViewDataSource,YHExcelViewDataSource,UITableViewDelegate>
 
-@property (weak, nonatomic) IBOutlet YHExcelTitleView *titleView;
-@property (weak, nonatomic) IBOutlet YHExcelView *excelView;
+@property (weak, nonatomic) IBOutlet YHExcelTitleView *titleView;//表头
+@property (weak, nonatomic) IBOutlet YHExcelView *excelView;//表内容
 @property (strong, nonatomic) NSArray *titleArray;
 @property (strong, nonatomic) NSArray *colWidthArray;
 
