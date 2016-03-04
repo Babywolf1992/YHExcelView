@@ -5,6 +5,9 @@
 ![](https://github.com/ShenYahui/YHExcelView/blob/master/3.png)
 ![](https://github.com/ShenYahui/YHExcelView/blob/master/4.png)
 ![](https://github.com/ShenYahui/YHExcelView/blob/master/5.png)  
+![](https://github.com/ShenYahui/YHExcelView/blob/master/6.png)
+![](https://github.com/ShenYahui/YHExcelView/blob/master/7.png)
+![image](https://github.com/ShenYahui/YHExcelView/blob/master/8.png) 
 #使用方法 
 ##和使用tableView类似，初始化YHExcelView 并设置dataSource
 ```Objective-C
