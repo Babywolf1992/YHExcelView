@@ -35,6 +35,7 @@
 @property (nonatomic, assign) BOOL showBorder;//default YES
 @property (nonatomic, strong) UIColor *borderColor;//default #eeeeee
 @property (nonatomic, assign) CGFloat borderWidth;//default 1.0
+@property (nonatomic, assign) CGRect tableViewFrame;//如果需要横向滚动，则需要设置
 
 - (YHExcelViewColumn *)dequeueReusableColumnWithIdentifier:(NSString *)identifier;
 - (void)reload;

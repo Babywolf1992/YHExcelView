@@ -114,6 +114,7 @@
 @interface YHExcelView()<UITableViewDataSource>
 @property (nonatomic,strong)NSMutableArray *colViewPool;
 @property (nonatomic,strong)UIView *bottomBorder;
+@property (nonatomic,strong)UIScrollView *scrollView;
 @end
 
 @implementation YHExcelView
@@ -136,7 +137,6 @@
     _borderColor = [UIColor colorWithRed:238.0/255.0 green:238.0/255.0 blue:238.0/255.0 alpha:1];
     _borderWidth = 1.0;
     _bottomBorder = [UIView new];
-    
 }
 
 - (void)setShowBorder:(BOOL)showBorder {
@@ -155,12 +155,19 @@
     [self reload];
 }
 
+- (void)setTableViewFrame:(CGRect)tableViewFrame {
+    _tableViewFrame = tableViewFrame;
+    [self reload];
+}
+
 - (void)setDataSource:(id<YHExcelViewDataSource>)dataSource {
     [self.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         [obj removeFromSuperview];
     }];
+    _scrollView = [[UIScrollView alloc] init];
+    [self addSubview:_scrollView];
     _tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
-    [self addSubview:_tableView];
+    [self.scrollView addSubview:_tableView];
     [self.tableView addSubview:_bottomBorder];
     _dataSource = dataSource;
     [self.tableView registerClass:[YHExcelViewCell class] forCellReuseIdentifier:@"YHExcelViewCell"];
@@ -218,7 +225,13 @@
 #pragma mark - layoutSubviews
 - (void)layoutSubviews {
     [super layoutSubviews];
-    _tableView.frame = self.bounds;
+    _scrollView.frame = self.bounds;
+    _scrollView.contentSize = CGSizeMake(self.tableView.yh_width, self.yh_height);
+    if (_tableViewFrame.size.width == 0) {
+        _tableView.frame = self.bounds;
+    }else{
+        _tableView.frame = _tableViewFrame;
+    }
     _bottomBorder.yh_x = 0 ;
     _bottomBorder.yh_y =  self.tableView.contentSize.height ;
     _bottomBorder.yh_width = self.tableView.yh_width;

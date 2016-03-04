@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "YHExcel.h"
+#import "UIView+YHCategory.h"
 
 @interface ViewController ()<YHExcelTitleViewDataSource,YHExcelViewDataSource>
 
@@ -25,8 +26,9 @@
     self.excelView.showBorder = YES;
     self.excelView.borderWidth = 1;
     self.excelView.borderColor = [UIColor blueColor];
-    self.titleArray = @[@"一",@"二",@"三",@"四",@"五",@"六",@"七",@"八",@"九"];
-    self.colWidthArray = @[@(35.0),@(35.0),@(35.0),@(35.0),@(35.0),@(35.0),@(35.0),@(35.0),@(40.0)];
+    self.titleArray = @[@"一",@"二",@"三",@"四",@"五",@"六",@"七",@"八",@"九",@"一",@"二",@"三",@"四",@"五",@"六",@"七",@"八",@"九"];
+    self.colWidthArray = @[@(35.0),@(35.0),@(35.0),@(35.0),@(35.0),@(35.0),@(35.0),@(35.0),@(40.0),@(35.0),@(35.0),@(35.0),@(35.0),@(35.0),@(35.0),@(35.0),@(35.0),@(40.0)];
+    self.excelView.tableViewFrame = CGRectMake(0, 0, 750, self.excelView.yh_height);
 //    self.titleArray = @[@"一",@"二",@"三",@"四",@"五",@"六",@"七",@"八",@"九"];
 //    self.colWidthArray = @[@(35.0),@(35.0),@(35.0),@(35.0),@(35.0),@(35.0),@(35.0),@(35.0),@(40.0)];
     self.titleView.dataSource = self;
