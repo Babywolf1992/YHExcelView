@@ -106,24 +106,24 @@
     if (_dataSource != nil  && [_dataSource respondsToSelector:@selector(excelTitleView:widthForItemAtIndex:)]) {
         isCustomItemWidth = YES ;
     }
-    CGFloat defaultWidth = self.width / _itemCount;
+    CGFloat defaultWidth = self.yh_width / _itemCount;
     for (NSInteger i = 0 ; i < self.subviews.count ; i++) {
         UILabel *label = self.subviews[i];
         if (![label isKindOfClass:[UILabel class]]) {
             continue;
         }
         NSInteger index = label.tag;
-        label.height = self.height;
+        label.yh_height = self.yh_height;
         if (isCustomItemWidth){
-            label.width = [_dataSource excelTitleView:self widthForItemAtIndex:index];
+            label.yh_width = [_dataSource excelTitleView:self widthForItemAtIndex:index];
             CGFloat x = 0;
             for (NSInteger j = 0 ; j < index; j ++) {
                 x += [_dataSource excelTitleView:self widthForItemAtIndex:j];
             }
-            label.x = x;
+            label.yh_x = x;
         }else{
-            label.width = defaultWidth;
-            label.x = index * defaultWidth;
+            label.yh_width = defaultWidth;
+            label.yh_x = index * defaultWidth;
         }
     }
     

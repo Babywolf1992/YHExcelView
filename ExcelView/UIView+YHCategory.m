@@ -9,12 +9,12 @@
 @implementation UIView (YBFCategory)
 
 #pragma mark - origin 坐标点
--(CGPoint)origin
+-(CGPoint)yh_origin
 {
     return self.frame.origin;
 }
 
--(void)setOrigin:(CGPoint)origin
+-(void)setYh_origin:(CGPoint)origin
 {
     CGRect frame   = self.frame;
     frame.origin   = origin;
@@ -22,12 +22,12 @@
 }
 
 #pragma mark - size 大小
--(CGSize)size
+-(CGSize)yh_size
 {
     return self.frame.size;
 }
 
--(void)setSize:(CGSize)size
+-(void)setYh_size:(CGSize)size
 {
     CGRect frame   = self.frame;
     frame.size     = size;
@@ -35,77 +35,77 @@
 }
 
 #pragma mark - width 宽度
--(CGFloat)width
+-(CGFloat)yh_width
 {
-    return self.size.width;
+    return self.yh_size.width;
 }
 
--(void)setWidth:(CGFloat)width
+-(void)setYh_width:(CGFloat)width
 {
-    CGSize size    = self.size;
+    CGSize size    = self.yh_size;
     size.width     = width;
-    self.size      = size;
+    self.yh_size      = size;
 }
 
 #pragma mark - height 高度
--(CGFloat)height
+-(CGFloat)yh_height
 {
-    return self.size.height;
+    return self.yh_size.height;
 }
 
--(void)setHeight:(CGFloat)height
+-(void)setYh_height:(CGFloat)height
 {
-    CGSize size    = self.size;
+    CGSize size    = self.yh_size;
     size.height    = height;
-    self.size      = size;
+    self.yh_size      = size;
 }
 
 #pragma mark - x 横坐标
--(CGFloat)x
+-(CGFloat)yh_x
 {
-    return self.origin.x;
+    return self.yh_origin.x;
 }
 
--(void)setX:(CGFloat)x
+-(void)setYh_x:(CGFloat)x
 {
-    CGPoint origin = self.origin;
+    CGPoint origin = self.yh_origin;
     origin.x       = x;
-    self.origin    = origin;
+    self.yh_origin    = origin;
 }
 
 #pragma mark - y 纵坐标
--(CGFloat)y
+-(CGFloat)yh_y
 {
-    return self.origin.y;
+    return self.yh_origin.y;
 }
 
--(void)setY:(CGFloat)y
+-(void)setYh_y:(CGFloat)y
 {
-    CGPoint origin = self.origin;
+    CGPoint origin = self.yh_origin;
     origin.y       = y;
-    self.origin    = origin;
+    self.yh_origin    = origin;
 }
 
-- (void)setCenterX:(CGFloat)centerX
+- (void)setYh_centerX:(CGFloat)centerX
 {
     CGPoint center = self.center;
     center.x = centerX;
     self.center = center;
 }
 
-- (CGFloat)centerX
+- (CGFloat)yh_centerX
 {
     return self.center.x;
 }
 
-- (void)setCenterY:(CGFloat)centerY
+- (void)setYh_centerY:(CGFloat)centerY
 {
     CGPoint center = self.center;
     center.y = centerY;
     self.center = center;
 }
 
-- (CGFloat)centerY
+- (CGFloat)yh_centerY
 {
     return self.center.y;
 }

@@ -90,17 +90,17 @@
     
     YHExcelViewColumn *tmpColView = nil ;
     for (YHExcelViewColumn *col in sortColArray) {
-        col.y = borderW;
-        col.height = self.height - borderW;
+        col.yh_y = borderW;
+        col.yh_height = self.yh_height - borderW;
         if (!isCustomColWidth) {
-            col.width = (self.width / columnCount) - borderW - (borderW / columnCount);
+            col.yh_width = (self.yh_width / columnCount) - borderW - (borderW / columnCount);
         }else{
-            col.width = [self.excelView.dataSource excelView:self.excelView widthForColumnAtIndex:[YHExcelViewIndexPath indexPathForCol:col.index atIndexPath:self.indexPath]] - borderW - (borderW / columnCount);
+            col.yh_width = [self.excelView.dataSource excelView:self.excelView widthForColumnAtIndex:[YHExcelViewIndexPath indexPathForCol:col.index atIndexPath:self.indexPath]] - borderW - (borderW / columnCount);
         }
         if (tmpColView == nil) {
-            col.x = borderW;
+            col.yh_x = borderW;
         }else {
-            col.x = CGRectGetMaxX(tmpColView.frame) + borderW;
+            col.yh_x = CGRectGetMaxX(tmpColView.frame) + borderW;
         }
         tmpColView = col;
         
@@ -219,10 +219,10 @@
 - (void)layoutSubviews {
     [super layoutSubviews];
     _tableView.frame = self.bounds;
-    _bottomBorder.x = 0 ;
-    _bottomBorder.y =  self.tableView.contentSize.height ;
-    _bottomBorder.width = self.tableView.width;
-    _bottomBorder.height = _borderWidth ;
+    _bottomBorder.yh_x = 0 ;
+    _bottomBorder.yh_y =  self.tableView.contentSize.height ;
+    _bottomBorder.yh_width = self.tableView.yh_width;
+    _bottomBorder.yh_height = _borderWidth ;
     _bottomBorder.backgroundColor = _borderColor;
     [self.tableView bringSubviewToFront:_bottomBorder];
 }
