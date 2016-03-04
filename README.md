@@ -8,12 +8,13 @@
 ![](https://github.com/ShenYahui/YHExcelView/blob/master/6.png)
 ![image](https://github.com/ShenYahui/YHExcelView/blob/master/8.png) 
 #使用方法 
-##cocoaPods
+##CocoaPods
 ```objc
 pod 'YHExcelView'
 #import <YHExcelView/YHExcel.h>
 ```
-##和使用tableView类似，初始化YHExcelView 并设置dataSource
+#demo
+##使用tableView类似，初始化YHExcelView 并设置dataSource
 ```objc
 #import "ViewController.h"
 #import "YHExcel.h"
