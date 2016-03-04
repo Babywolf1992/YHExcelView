@@ -29,7 +29,6 @@
 }
 
 - (void)setup {
-    
 }
 
 - (void)setupViewWithexcelView:(YHExcelView *)excelView indexPath:(NSIndexPath *)indexPath colViewPool:(NSMutableArray *)colViewPool{
@@ -114,7 +113,6 @@
 @interface YHExcelView()<UITableViewDataSource>
 @property (nonatomic,strong)NSMutableArray *colViewPool;
 @property (nonatomic,strong)UIView *bottomBorder;
-@property (nonatomic,strong)UIScrollView *scrollView;
 @end
 
 @implementation YHExcelView
@@ -165,6 +163,8 @@
         [obj removeFromSuperview];
     }];
     _scrollView = [[UIScrollView alloc] init];
+    _scrollView.showsHorizontalScrollIndicator = NO;
+    _scrollView.showsVerticalScrollIndicator = NO;
     [self addSubview:_scrollView];
     _tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
     [self.scrollView addSubview:_tableView];

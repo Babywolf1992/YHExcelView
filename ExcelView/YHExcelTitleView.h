@@ -30,7 +30,7 @@
 
 @end
 
-@interface YHExcelTitleView : UIView
+@interface YHExcelTitleView : UIScrollView
 
 @property (weak,nonatomic)id<YHExcelTitleViewDataSource> dataSource;
 @property (strong,nonatomic)UIFont *titleFont;//default [UIFont systemFontOfSize:13]

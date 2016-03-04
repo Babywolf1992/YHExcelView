@@ -31,6 +31,7 @@
 
 @property (nonatomic, weak) id <YHExcelViewDataSource> dataSource;
 //不要设置tableView的dataSource，YHExcelViewDataSource继承自UITableViewDataSource
+@property (nonatomic, readonly, strong) UIScrollView *scrollView;
 @property (nonatomic, readonly, strong) UITableView *tableView;
 @property (nonatomic, assign) BOOL showBorder;//default YES
 @property (nonatomic, strong) UIColor *borderColor;//default #eeeeee

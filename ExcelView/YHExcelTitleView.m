@@ -29,6 +29,8 @@
 
 #pragma mark - setter
 - (void)setupSubView {
+    self.showsHorizontalScrollIndicator = NO;
+    self.showsVerticalScrollIndicator = NO;
     self.titleFont = [UIFont systemFontOfSize:13];
     self.titleColor = [UIColor grayColor];
     self.titleAlignment = NSTextAlignmentCenter;
