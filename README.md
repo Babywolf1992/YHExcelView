@@ -6,7 +6,6 @@
 ![](https://github.com/ShenYahui/YHExcelView/blob/master/4.png)
 ![](https://github.com/ShenYahui/YHExcelView/blob/master/5.png)  
 ![](https://github.com/ShenYahui/YHExcelView/blob/master/6.png)
-![](https://github.com/ShenYahui/YHExcelView/blob/master/7.png)
 ![image](https://github.com/ShenYahui/YHExcelView/blob/master/8.png) 
 #使用方法 
 ##和使用tableView类似，初始化YHExcelView 并设置dataSource
@@ -15,7 +14,7 @@
 #import "YHExcel.h"
 #import "UIView+YHCategory.h"
 
-@interface ViewController ()<YHExcelTitleViewDataSource,YHExcelViewDataSource>
+@interface ViewController ()<YHExcelTitleViewDataSource,YHExcelViewDataSource,UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet YHExcelTitleView *titleView;
 @property (weak, nonatomic) IBOutlet YHExcelView *excelView;
@@ -30,14 +29,20 @@
     [super viewDidLoad];
     self.excelView.showBorder = YES;
     self.excelView.borderWidth = 1;
-    self.excelView.borderColor = [UIColor blueColor];
+//    self.excelView.borderColor = [UIColor blueColor];
     self.titleArray = @[@"一",@"二",@"三",@"四",@"五",@"六",@"七",@"八",@"九",@"一",@"二",@"三",@"四",@"五",@"六",@"七",@"八",@"九"];
     self.colWidthArray = @[@(35.0),@(35.0),@(35.0),@(35.0),@(35.0),@(35.0),@(35.0),@(35.0),@(40.0),@(35.0),@(35.0),@(35.0),@(35.0),@(35.0),@(35.0),@(35.0),@(35.0),@(40.0)];
     self.excelView.tableViewFrame = CGRectMake(0, 0, 750, self.excelView.yh_height);//设置可横向滚动
+    self.titleView.contentSize = CGSizeMake(750, 0);
 //    self.titleArray = @[@"一",@"二",@"三",@"四",@"五",@"六",@"七",@"八",@"九"];
 //    self.colWidthArray = @[@(35.0),@(35.0),@(35.0),@(35.0),@(35.0),@(35.0),@(35.0),@(35.0),@(40.0)];
     self.titleView.dataSource = self;
     self.excelView.dataSource = self;
+    self.excelView.backgroundColor = [UIColor whiteColor];
+    
+    //表头 与 表内容 同时滚动
+    [self.titleView addObserver:self forKeyPath:@"contentOffset" options:NSKeyValueObservingOptionNew |NSKeyValueObservingOptionOld  context:nil];
+    [self.excelView.scrollView addObserver:self forKeyPath:@"contentOffset" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:nil];
 }
 #pragma mark - YHExcelTitleViewDataSource
 - (NSInteger)excelTitleViewItemCount:(YHExcelTitleView *)titleView {
@@ -80,6 +85,25 @@
 
 - (NSInteger)excelView:(YHExcelView *)excelView numberOfRowsInSection:(NSInteger)section {
     return 20;
+}
+
+#pragma mark - kvo
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context {
+    CGPoint old = [change[@"old"] CGPointValue];
+    CGPoint new = [change[@"new"] CGPointValue];
+    if (old.x == new.x) {
+        return;
+    }
+    if (object == self.titleView) {
+        self.excelView.scrollView.contentOffset = CGPointMake(new.x, 0);
+    }else if(object == self.excelView.scrollView){
+        self.titleView.contentOffset = CGPointMake(new.x, 0);
+    }
+}
+
+- (void)dealloc {
+    [self.titleView removeObserver:self forKeyPath:@"contentOffset"];
+    [self.excelView.scrollView removeObserver:self forKeyPath:@"contentOffset"];
 }
 
 @end
