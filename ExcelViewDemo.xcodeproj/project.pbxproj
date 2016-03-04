@@ -1,0 +1,559 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		180563F11C8914DD00066034 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 180563F01C8914DD00066034 /* main.m */; };
+		180563F41C8914DD00066034 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 180563F31C8914DD00066034 /* AppDelegate.m */; };
+		180563F71C8914DD00066034 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 180563F61C8914DD00066034 /* ViewController.m */; };
+		180563FA1C8914DD00066034 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180563F81C8914DD00066034 /* Main.storyboard */; };
+		180563FC1C8914DD00066034 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 180563FB1C8914DD00066034 /* Assets.xcassets */; };
+		180563FF1C8914DD00066034 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180563FD1C8914DD00066034 /* LaunchScreen.storyboard */; };
+		1805640A1C8914DD00066034 /* ExcelViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 180564091C8914DD00066034 /* ExcelViewDemoTests.m */; };
+		180564151C8914DD00066034 /* ExcelViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 180564141C8914DD00066034 /* ExcelViewDemoUITests.m */; };
+		1805642F1C89151400066034 /* UIView+YHCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 180564241C89151400066034 /* UIView+YHCategory.m */; };
+		180564301C89151400066034 /* YHExcelViewIndexPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 180564261C89151400066034 /* YHExcelViewIndexPath.m */; };
+		180564311C89151400066034 /* YHExcelTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 180564281C89151400066034 /* YHExcelTitleView.m */; };
+		180564321C89151400066034 /* YHExcelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805642A1C89151400066034 /* YHExcelView.m */; };
+		180564341C89151400066034 /* YHExcelViewColumn.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805642E1C89151400066034 /* YHExcelViewColumn.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		180564061C8914DD00066034 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 180563E41C8914DD00066034 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 180563EB1C8914DD00066034;
+			remoteInfo = ExcelViewDemo;
+		};
+		180564111C8914DD00066034 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 180563E41C8914DD00066034 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 180563EB1C8914DD00066034;
+			remoteInfo = ExcelViewDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		180563EC1C8914DD00066034 /* ExcelViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExcelViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		180563F01C8914DD00066034 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		180563F21C8914DD00066034 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		180563F31C8914DD00066034 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		180563F51C8914DD00066034 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		180563F61C8914DD00066034 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		180563F91C8914DD00066034 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		180563FB1C8914DD00066034 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		180563FE1C8914DD00066034 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		180564001C8914DD00066034 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		180564051C8914DD00066034 /* ExcelViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExcelViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		180564091C8914DD00066034 /* ExcelViewDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExcelViewDemoTests.m; sourceTree = "<group>"; };
+		1805640B1C8914DD00066034 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		180564101C8914DD00066034 /* ExcelViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExcelViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		180564141C8914DD00066034 /* ExcelViewDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExcelViewDemoUITests.m; sourceTree = "<group>"; };
+		180564161C8914DD00066034 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		180564231C89151400066034 /* UIView+YHCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YHCategory.h"; sourceTree = "<group>"; };
+		180564241C89151400066034 /* UIView+YHCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YHCategory.m"; sourceTree = "<group>"; };
+		180564251C89151400066034 /* YHExcelViewIndexPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHExcelViewIndexPath.h; sourceTree = "<group>"; };
+		180564261C89151400066034 /* YHExcelViewIndexPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHExcelViewIndexPath.m; sourceTree = "<group>"; };
+		180564271C89151400066034 /* YHExcelTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHExcelTitleView.h; sourceTree = "<group>"; };
+		180564281C89151400066034 /* YHExcelTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHExcelTitleView.m; sourceTree = "<group>"; };
+		180564291C89151400066034 /* YHExcelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHExcelView.h; sourceTree = "<group>"; };
+		1805642A1C89151400066034 /* YHExcelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHExcelView.m; sourceTree = "<group>"; };
+		1805642D1C89151400066034 /* YHExcelViewColumn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHExcelViewColumn.h; sourceTree = "<group>"; };
+		1805642E1C89151400066034 /* YHExcelViewColumn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHExcelViewColumn.m; sourceTree = "<group>"; };
+		180564351C89191100066034 /* YHExcel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHExcel.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		180563E91C8914DD00066034 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		180564021C8914DD00066034 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1805640D1C8914DD00066034 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		180563E31C8914DD00066034 = {
+			isa = PBXGroup;
+			children = (
+				180563EE1C8914DD00066034 /* ExcelViewDemo */,
+				180564081C8914DD00066034 /* ExcelViewDemoTests */,
+				180564131C8914DD00066034 /* ExcelViewDemoUITests */,
+				180563ED1C8914DD00066034 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		180563ED1C8914DD00066034 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				180563EC1C8914DD00066034 /* ExcelViewDemo.app */,
+				180564051C8914DD00066034 /* ExcelViewDemoTests.xctest */,
+				180564101C8914DD00066034 /* ExcelViewDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		180563EE1C8914DD00066034 /* ExcelViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				180564221C89151400066034 /* ExcelView */,
+				180563F21C8914DD00066034 /* AppDelegate.h */,
+				180563F31C8914DD00066034 /* AppDelegate.m */,
+				180563F51C8914DD00066034 /* ViewController.h */,
+				180563F61C8914DD00066034 /* ViewController.m */,
+				180563F81C8914DD00066034 /* Main.storyboard */,
+				180563FB1C8914DD00066034 /* Assets.xcassets */,
+				180563FD1C8914DD00066034 /* LaunchScreen.storyboard */,
+				180564001C8914DD00066034 /* Info.plist */,
+				180563EF1C8914DD00066034 /* Supporting Files */,
+			);
+			path = ExcelViewDemo;
+			sourceTree = "<group>";
+		};
+		180563EF1C8914DD00066034 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				180563F01C8914DD00066034 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		180564081C8914DD00066034 /* ExcelViewDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				180564091C8914DD00066034 /* ExcelViewDemoTests.m */,
+				1805640B1C8914DD00066034 /* Info.plist */,
+			);
+			path = ExcelViewDemoTests;
+			sourceTree = "<group>";
+		};
+		180564131C8914DD00066034 /* ExcelViewDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				180564141C8914DD00066034 /* ExcelViewDemoUITests.m */,
+				180564161C8914DD00066034 /* Info.plist */,
+			);
+			path = ExcelViewDemoUITests;
+			sourceTree = "<group>";
+		};
+		180564221C89151400066034 /* ExcelView */ = {
+			isa = PBXGroup;
+			children = (
+				180564231C89151400066034 /* UIView+YHCategory.h */,
+				180564241C89151400066034 /* UIView+YHCategory.m */,
+				180564251C89151400066034 /* YHExcelViewIndexPath.h */,
+				180564261C89151400066034 /* YHExcelViewIndexPath.m */,
+				180564271C89151400066034 /* YHExcelTitleView.h */,
+				180564281C89151400066034 /* YHExcelTitleView.m */,
+				180564291C89151400066034 /* YHExcelView.h */,
+				1805642A1C89151400066034 /* YHExcelView.m */,
+				1805642D1C89151400066034 /* YHExcelViewColumn.h */,
+				1805642E1C89151400066034 /* YHExcelViewColumn.m */,
+				180564351C89191100066034 /* YHExcel.h */,
+			);
+			path = ExcelView;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		180563EB1C8914DD00066034 /* ExcelViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 180564191C8914DD00066034 /* Build configuration list for PBXNativeTarget "ExcelViewDemo" */;
+			buildPhases = (
+				180563E81C8914DD00066034 /* Sources */,
+				180563E91C8914DD00066034 /* Frameworks */,
+				180563EA1C8914DD00066034 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExcelViewDemo;
+			productName = ExcelViewDemo;
+			productReference = 180563EC1C8914DD00066034 /* ExcelViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		180564041C8914DD00066034 /* ExcelViewDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1805641C1C8914DD00066034 /* Build configuration list for PBXNativeTarget "ExcelViewDemoTests" */;
+			buildPhases = (
+				180564011C8914DD00066034 /* Sources */,
+				180564021C8914DD00066034 /* Frameworks */,
+				180564031C8914DD00066034 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				180564071C8914DD00066034 /* PBXTargetDependency */,
+			);
+			name = ExcelViewDemoTests;
+			productName = ExcelViewDemoTests;
+			productReference = 180564051C8914DD00066034 /* ExcelViewDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1805640F1C8914DD00066034 /* ExcelViewDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1805641F1C8914DD00066034 /* Build configuration list for PBXNativeTarget "ExcelViewDemoUITests" */;
+			buildPhases = (
+				1805640C1C8914DD00066034 /* Sources */,
+				1805640D1C8914DD00066034 /* Frameworks */,
+				1805640E1C8914DD00066034 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				180564121C8914DD00066034 /* PBXTargetDependency */,
+			);
+			name = ExcelViewDemoUITests;
+			productName = ExcelViewDemoUITests;
+			productReference = 180564101C8914DD00066034 /* ExcelViewDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		180563E41C8914DD00066034 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Yahui;
+				TargetAttributes = {
+					180563EB1C8914DD00066034 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					180564041C8914DD00066034 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 180563EB1C8914DD00066034;
+					};
+					1805640F1C8914DD00066034 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 180563EB1C8914DD00066034;
+					};
+				};
+			};
+			buildConfigurationList = 180563E71C8914DD00066034 /* Build configuration list for PBXProject "ExcelViewDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 180563E31C8914DD00066034;
+			productRefGroup = 180563ED1C8914DD00066034 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				180563EB1C8914DD00066034 /* ExcelViewDemo */,
+				180564041C8914DD00066034 /* ExcelViewDemoTests */,
+				1805640F1C8914DD00066034 /* ExcelViewDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		180563EA1C8914DD00066034 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				180563FF1C8914DD00066034 /* LaunchScreen.storyboard in Resources */,
+				180563FC1C8914DD00066034 /* Assets.xcassets in Resources */,
+				180563FA1C8914DD00066034 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		180564031C8914DD00066034 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1805640E1C8914DD00066034 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		180563E81C8914DD00066034 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				180564321C89151400066034 /* YHExcelView.m in Sources */,
+				180563F71C8914DD00066034 /* ViewController.m in Sources */,
+				180564311C89151400066034 /* YHExcelTitleView.m in Sources */,
+				180563F41C8914DD00066034 /* AppDelegate.m in Sources */,
+				180564301C89151400066034 /* YHExcelViewIndexPath.m in Sources */,
+				1805642F1C89151400066034 /* UIView+YHCategory.m in Sources */,
+				180563F11C8914DD00066034 /* main.m in Sources */,
+				180564341C89151400066034 /* YHExcelViewColumn.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		180564011C8914DD00066034 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1805640A1C8914DD00066034 /* ExcelViewDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1805640C1C8914DD00066034 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				180564151C8914DD00066034 /* ExcelViewDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		180564071C8914DD00066034 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 180563EB1C8914DD00066034 /* ExcelViewDemo */;
+			targetProxy = 180564061C8914DD00066034 /* PBXContainerItemProxy */;
+		};
+		180564121C8914DD00066034 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 180563EB1C8914DD00066034 /* ExcelViewDemo */;
+			targetProxy = 180564111C8914DD00066034 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		180563F81C8914DD00066034 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				180563F91C8914DD00066034 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		180563FD1C8914DD00066034 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				180563FE1C8914DD00066034 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		180564171C8914DD00066034 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		180564181C8914DD00066034 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1805641A1C8914DD00066034 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ExcelViewDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yahui.ExcelViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1805641B1C8914DD00066034 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ExcelViewDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yahui.ExcelViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1805641D1C8914DD00066034 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ExcelViewDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yahui.ExcelViewDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ExcelViewDemo.app/ExcelViewDemo";
+			};
+			name = Debug;
+		};
+		1805641E1C8914DD00066034 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ExcelViewDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yahui.ExcelViewDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ExcelViewDemo.app/ExcelViewDemo";
+			};
+			name = Release;
+		};
+		180564201C8914DD00066034 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ExcelViewDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yahui.ExcelViewDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ExcelViewDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		180564211C8914DD00066034 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ExcelViewDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yahui.ExcelViewDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ExcelViewDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		180563E71C8914DD00066034 /* Build configuration list for PBXProject "ExcelViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				180564171C8914DD00066034 /* Debug */,
+				180564181C8914DD00066034 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		180564191C8914DD00066034 /* Build configuration list for PBXNativeTarget "ExcelViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1805641A1C8914DD00066034 /* Debug */,
+				1805641B1C8914DD00066034 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1805641C1C8914DD00066034 /* Build configuration list for PBXNativeTarget "ExcelViewDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1805641D1C8914DD00066034 /* Debug */,
+				1805641E1C8914DD00066034 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1805641F1C8914DD00066034 /* Build configuration list for PBXNativeTarget "ExcelViewDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				180564201C8914DD00066034 /* Debug */,
+				180564211C8914DD00066034 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 180563E41C8914DD00066034 /* Project object */;
+}
