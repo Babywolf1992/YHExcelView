@@ -24,7 +24,7 @@
     [super viewDidLoad];
     self.excelView.showBorder = YES;
     self.excelView.borderWidth = 1;
-//    self.excelView.borderColor = [UIColor blueColor];
+    self.excelView.borderColor = [UIColor blueColor];
     self.titleArray = @[@"一",@"二",@"三",@"四",@"五",@"六",@"七",@"八",@"九"];
     self.colWidthArray = @[@(35.0),@(35.0),@(35.0),@(35.0),@(35.0),@(35.0),@(35.0),@(35.0),@(40.0)];
 //    self.titleArray = @[@"一",@"二",@"三",@"四",@"五",@"六",@"七",@"八",@"九"];
